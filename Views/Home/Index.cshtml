@@ -1,0 +1,16 @@
+﻿@using DirectoryProject.ViewModels
+@model FolderListViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Folder: @Model.CurrentFolder</h2>
+        @foreach (var p in Model.allFolderDescendents)
+        {
+            <div><a class="nav-link" asp-controller="Home" asp-action="Index" 
+                    asp-route-rootFolder="@p.Name" 
+                    asp-route-rootFolderList="@ViewBag.list"> @p.Name</a>               
+            </div>
+        }
+</div>
