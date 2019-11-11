@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using DirectoryProject.Models;
 using DirectoryProject.ViewModels;
 using Microsoft.AspNetCore.Mvc;

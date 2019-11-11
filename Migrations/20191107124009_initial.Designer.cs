@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DirectoryProject.Migrations
 {
     [DbContext(typeof(FolderContext))]
-    [Migration("20191003125332_Initial")]
-    partial class Initial
+    [Migration("20191107124009_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
